@@ -84,7 +84,7 @@ export default function Register() {
         </label>
 
         <Button type="submit" disabled={isSubmitting}>
-          Next Strp <ArrowRight />
+          Next Step <ArrowRight />
         </Button>
       </Form>
     </Container>
