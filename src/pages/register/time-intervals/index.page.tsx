@@ -136,9 +136,7 @@ export default function TimeIntervals() {
                       )
                     }}
                   />
-                  <Text>
-                    {weekdays[field.weekDay]} {`(${field.weekDay})`}
-                  </Text>
+                  <Text>{weekdays[field.weekDay]}</Text>
                 </IntervalDay>
 
                 <IntervalInputs>
