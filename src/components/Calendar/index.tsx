@@ -112,9 +112,10 @@ export function Calendar({ selectedDate, onDateSelected }: CalendarProps) {
       ...daysInMonthArray.map((date) => {
         return {
           date,
-          disabled:
+          disabled: !!(
             date.endOf('day').isBefore(new Date()) ||
-            blockedDates?.blockedWeekDays.includes(date.get('day')),
+            blockedDates?.blockedWeekDays.includes(date.get('day'))
+          ),
         }
       }),
 
