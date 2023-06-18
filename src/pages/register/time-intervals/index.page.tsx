@@ -75,12 +75,12 @@ export default function TimeIntervals() {
     resolver: zodResolver(timeIntervalsFormSchema),
     defaultValues: {
       intervals: [
-        { weekDay: 0, enabled: true, start: '08:00', end: '18:00' },
+        { weekDay: 0, enabled: false, start: '08:00', end: '18:00' },
         { weekDay: 1, enabled: true, start: '08:00', end: '18:00' },
         { weekDay: 2, enabled: true, start: '08:00', end: '18:00' },
         { weekDay: 3, enabled: true, start: '08:00', end: '18:00' },
         { weekDay: 4, enabled: true, start: '08:00', end: '18:00' },
-        { weekDay: 5, enabled: false, start: '08:00', end: '18:00' },
+        { weekDay: 5, enabled: true, start: '08:00', end: '18:00' },
         { weekDay: 6, enabled: false, start: '08:00', end: '18:00' },
       ],
     },
